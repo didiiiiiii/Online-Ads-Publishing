@@ -1,0 +1,17 @@
+.sidebar, .header {
+    background-color:lemonchiffon;
+}
+
+.aa {
+    background-color: greenyellow;
+}
+
+.header h2 {
+    text-align: center;
+}
+
+.footer {
+    background-color:lemonchiffon;
+    float: left;
+    width: 100%
+}
