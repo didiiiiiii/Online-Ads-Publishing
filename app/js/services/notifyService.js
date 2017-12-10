@@ -13,7 +13,7 @@ app.factory('notifyService',
                     timeout: 1000
                 })
             },
-            showError: function (msf, serverError) {
+            showError: function (msg, serverError) {
                 //collect errors to display from the server response
                 var errors = [];
                 if(serverError && serverError.error_description) {
