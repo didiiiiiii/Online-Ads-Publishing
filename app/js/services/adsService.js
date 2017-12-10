@@ -13,7 +13,7 @@ app.factory('adsService',
         );
         return {
            getAds: function(params, success, error) {
-               return adsRerource.getAll(params,success, error);
+               return adsRerource.getAll(params, success, error);
            }
         };
     }
