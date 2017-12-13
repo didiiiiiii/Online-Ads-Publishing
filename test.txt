@@ -1,1 +1,20 @@
 test
+
+file organization - by feature
+                  - by type
+                  - by feature
+module is injector - like a namespace - съдържа всички обекти (контроли, сървиси, директиви и т.н.)
+controller -setup the scope, interaact with view, координира view и model
+service - handle non-view logic; communicate with the server; hold data and state
+directive - manipulate DOM; receive view events
+view - display the app; declare bindings & directives
+
+single responsibility
+loosely coupled
+good interface
+testable
+
+root scope
+all other scope are in hierarchy - shared
+                                 - inherited
+                                 - isolated
