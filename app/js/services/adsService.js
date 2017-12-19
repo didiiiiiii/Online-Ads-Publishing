@@ -4,7 +4,7 @@
 
 app.factory('adsService',
     function($resource, baseServiceUrl) {
-        var adsRerource = $resource(
+        var adsResource = $resource(
             baseServiceUrl + '/api/ads',
             null,
             {
@@ -13,7 +13,7 @@ app.factory('adsService',
         );
         return {
            getAds: function(params, success, error) {
-               return adsRerource.getAll(params, success, error);
+               return adsResource.getAll(params, success, error);
            }
         };
     }
