@@ -15,3 +15,17 @@
     float: left;
     width: 100%
 }
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 4px;
+}
+.selected a {
+    border:2px solid indigo;
+    text-decoration: none;
+    padding: 4px;
+    
+}
