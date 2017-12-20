@@ -8,5 +8,15 @@ app.controller('AppController',
     function ($scope, authService) {
         //put the authService in the $scope to make it accessible from all screens
         $scope.authService = authService;
+
+        $scope.logout = function(){
+            authService.logout( function success() {
+                    notifyService.showInfo("Logout successful");
+                    $location.path("/");
+                },
+                function error(err) {
+                    notifyService.showInfo("Logout failed");                    
+                } 
+            )};
     }
 );
