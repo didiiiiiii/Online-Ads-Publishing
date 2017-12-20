@@ -21,6 +21,8 @@ app.controller('HomeController',
             );
         };
       
+        $scope.reloadAds();            
+      
         // this event is sent by RideSidebarController when the current categody is changed
         $scope.$on("categorySelectionChanged", function(event, selectedCategoryId) {
             $scope.adsParams.categoryId = selectedCategoryId;
@@ -30,7 +32,7 @@ app.controller('HomeController',
 
         // this event is sent by the RideSidebarController when the current town is changed
         $scope.$on("townSelectionChanged", function(event, selectedTownId) {
-            $scope.adsParams.townId = townId;
+            $scope.adsParams.townId = selectedTownId;
             $scope.adsParams.startPage = 1;
             $scope.reloadAds();
         });
